@@ -60,10 +60,11 @@
       textAlign: 'left',
       color: '#000000',
       backgroundColor: '',
+      wordBreak: 'break-word',
       ...commonDefaultProps
   };
   const textStylePropNames = lodashEs.without(Object.keys(textDefaultProps), 'actionType', 'url', 'text');
-  lodashEs.without(Object.keys(imageDefaultProps), 'src');
+  const imageStylePropsNames = lodashEs.without(Object.keys(imageDefaultProps), 'src');
   const isEditingProp = {
       isEditing: {
           type: Boolean,
@@ -81,6 +82,40 @@
           ...mapProps,
           ...isEditingProp
       };
+  };
+
+  const defaultProps$1 = transformToComponentProps(imageDefaultProps);
+  // array that contains style props
+  var script$1 = vue.defineComponent({
+      name: 'KImage',
+      props: {
+          ...defaultProps$1
+      },
+      setup(props) {
+          // 重用并且简化
+          // 抽离并且获得 styleProps
+          const { styleProps, handleClick } = useComponentCommon(props, imageStylePropsNames);
+          return {
+              styleProps,
+              handleClick
+          };
+      }
+  });
+
+  function render$1(_ctx, _cache, $props, $setup, $data, $options) {
+    return (vue.openBlock(), vue.createBlock("img", {
+      style: _ctx.styleProps,
+      class: "k-image-component",
+      onClick: _cache[1] || (_cache[1] = vue.withModifiers((...args) => (_ctx.handleClick && _ctx.handleClick(...args)), ["prevent"])),
+      src: _ctx.src
+    }, null, 12 /* STYLE, PROPS */, ["src"]))
+  }
+
+  script$1.render = render$1;
+  script$1.__file = "src/components/KImage/KImage.vue";
+
+  script$1.install = (app) => {
+      app.component(script$1.name, script$1);
   };
 
   const defaultProps = transformToComponentProps(textDefaultProps);
@@ -119,7 +154,8 @@
   script.__file = "src/components/KText/KText.vue";
 
   const components = [
-      script
+      script,
+      script$1
   ];
   const install = (app) => {
       components.forEach((component) => {
@@ -130,9 +166,14 @@
       install
   };
 
+  exports.KImage = script$1;
   exports.KText = script;
   exports.default = index;
+  exports.imageDefaultProps = imageDefaultProps;
+  exports.imageStylePropsNames = imageStylePropsNames;
   exports.install = install;
+  exports.textDefaultProps = textDefaultProps;
+  exports.textStylePropNames = textStylePropNames;
 
   Object.defineProperty(exports, '__esModule', { value: true });
 

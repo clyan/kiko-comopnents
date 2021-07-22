@@ -7,11 +7,10 @@ const file = type => `dist/${name}.${type}.js`
 export { file, name }
 const overrides  = {
   compilerOptions : {
-    declaration: true
+    "declaration": true,
+    "declarationDir": "./types"
   },
-  exclude: [
-    'node_modules',
-  ]
+  exclude: ["tests/**/*.ts", "tests/**/*.tsx", "node_modules"]
 }
 export default {
   input: 'src/index.ts',
@@ -23,7 +22,8 @@ export default {
   plugins:[
     nodeResolve(),
     typescript({
-      tsconfigOverride: overrides 
+      tsconfigOverride: overrides,
+      useTsconfigDeclarationDir: true
     }),
     vuePlugin(),
     less({

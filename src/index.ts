@@ -1,8 +1,14 @@
 import { App } from 'vue';
+import KImage from './components/KImage';
 import KText from './components/KText/KText.vue'
-
+export { 
+  textDefaultProps , textStylePropNames, TextComponentProps,
+  imageDefaultProps, imageStylePropsNames, ImageComponentProps,
+  AllComponentProps
+} from './defaultProps'
 const components = [
-  KText
+  KText,
+  KImage
 ]
 const install = (app: App)=> {
   components.forEach((component) => {
@@ -11,6 +17,7 @@ const install = (app: App)=> {
 }
 export {
   KText,
+  KImage,
   install
 }
 

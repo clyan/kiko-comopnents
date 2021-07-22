@@ -31,6 +31,7 @@ export interface TextComponentProps extends CommonComponentProps {
     textAlign: string;
     color: string;
     backgroundColor: string;
+    wordBreak: string;
 }
 export interface ImageComponentProps extends CommonComponentProps {
     src: string;

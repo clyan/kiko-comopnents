@@ -4,25 +4,30 @@
   "private": false,
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "npm run clean && npm run build:esm && npm run build:umd",
+    "build": "npm run clean && npm run build:esm && npm run build:umd && npm run build:types",
     "test:watch": "vue-cli-service test:unit --watch",
     "test": "vue-cli-service test:unit",
     "lint": "vue-cli-service lint  --max-warnings 5",
     "build:esm": "rollup --config build/rollup.esm.config.js",
     "build:umd": "rollup --config build/rollup.umd.config.js",
-    "clean": "rimraf ./dist",
+    "build:dev": "npm run build && npm pack",
+    "build:types": "npx api-extractor run --local",
+    "clean": "rimraf ./dist && rimraf ./types",
     "prepublishOnly": "npm run lint && npm run test && npm run build",
     "prepare": "husky install"
   },
   "main": "dist/kiko-components.umd.js",
   "module": "dist/kiko-components.esm.js",
+  "types": "dist/index.d.ts",
   "files": [
     "dist"
   ],
   "dependencies": {
-    "core-js": "^3.6.5"
+    "core-js": "^3.6.5",
+    "lodash-es": "^4.17.21"
   },
   "devDependencies": {
+    "@microsoft/api-extractor": "^7.18.4",
     "@rollup/plugin-node-resolve": "^13.0.2",
     "@types/jest": "^24.0.19",
     "@types/lodash-es": "^4.17.4",
@@ -53,8 +58,6 @@
     "vue-jest": "^5.0.0-0"
   },
   "peerDependencies": {
-    "lodash-es": "^4.17.21",
     "vue": "^3.0.0"
-  },
-  "types": "dist/index.d.ts"
+  }
 }

@@ -1,4 +1,4 @@
-import { computed, defineComponent, openBlock, createBlock, resolveDynamicComponent, withCtx, createTextVNode, toDisplayString } from 'vue';
+import { computed, defineComponent, openBlock, createBlock, withModifiers, resolveDynamicComponent, withCtx, createTextVNode, toDisplayString } from 'vue';
 import { pick, without, mapValues } from 'lodash-es';
 
 const useComponentCommon = (props, picks) => {
@@ -57,10 +57,11 @@ const textDefaultProps = {
     textAlign: 'left',
     color: '#000000',
     backgroundColor: '',
+    wordBreak: 'break-word',
     ...commonDefaultProps
 };
 const textStylePropNames = without(Object.keys(textDefaultProps), 'actionType', 'url', 'text');
-without(Object.keys(imageDefaultProps), 'src');
+const imageStylePropsNames = without(Object.keys(imageDefaultProps), 'src');
 const isEditingProp = {
     isEditing: {
         type: Boolean,
@@ -78,6 +79,40 @@ const transformToComponentProps = (props) => {
         ...mapProps,
         ...isEditingProp
     };
+};
+
+const defaultProps$1 = transformToComponentProps(imageDefaultProps);
+// array that contains style props
+var script$1 = defineComponent({
+    name: 'KImage',
+    props: {
+        ...defaultProps$1
+    },
+    setup(props) {
+        // 重用并且简化
+        // 抽离并且获得 styleProps
+        const { styleProps, handleClick } = useComponentCommon(props, imageStylePropsNames);
+        return {
+            styleProps,
+            handleClick
+        };
+    }
+});
+
+function render$1(_ctx, _cache, $props, $setup, $data, $options) {
+  return (openBlock(), createBlock("img", {
+    style: _ctx.styleProps,
+    class: "k-image-component",
+    onClick: _cache[1] || (_cache[1] = withModifiers((...args) => (_ctx.handleClick && _ctx.handleClick(...args)), ["prevent"])),
+    src: _ctx.src
+  }, null, 12 /* STYLE, PROPS */, ["src"]))
+}
+
+script$1.render = render$1;
+script$1.__file = "src/components/KImage/KImage.vue";
+
+script$1.install = (app) => {
+    app.component(script$1.name, script$1);
 };
 
 const defaultProps = transformToComponentProps(textDefaultProps);
@@ -116,7 +151,8 @@ script.render = render;
 script.__file = "src/components/KText/KText.vue";
 
 const components = [
-    script
+    script,
+    script$1
 ];
 const install = (app) => {
     components.forEach((component) => {
@@ -128,4 +164,4 @@ var index = {
 };
 
 export default index;
-export { script as KText, install };
+export { script$1 as KImage, script as KText, imageDefaultProps, imageStylePropsNames, install, textDefaultProps, textStylePropNames };

@@ -1,0 +1,1472 @@
+{
+  "metadata": {
+    "toolPackage": "@microsoft/api-extractor",
+    "toolVersion": "7.18.4",
+    "schemaVersion": 1004,
+    "oldestForwardsCompatibleVersion": 1001,
+    "tsdocConfig": {
+      "$schema": "https://developer.microsoft.com/json-schemas/tsdoc/v0/tsdoc.schema.json",
+      "noStandardTags": true,
+      "tagDefinitions": [
+        {
+          "tagName": "@alpha",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@beta",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@defaultValue",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@decorator",
+          "syntaxKind": "block",
+          "allowMultiple": true
+        },
+        {
+          "tagName": "@deprecated",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@eventProperty",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@example",
+          "syntaxKind": "block",
+          "allowMultiple": true
+        },
+        {
+          "tagName": "@experimental",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@inheritDoc",
+          "syntaxKind": "inline"
+        },
+        {
+          "tagName": "@internal",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@label",
+          "syntaxKind": "inline"
+        },
+        {
+          "tagName": "@link",
+          "syntaxKind": "inline",
+          "allowMultiple": true
+        },
+        {
+          "tagName": "@override",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@packageDocumentation",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@param",
+          "syntaxKind": "block",
+          "allowMultiple": true
+        },
+        {
+          "tagName": "@privateRemarks",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@public",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@readonly",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@remarks",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@returns",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@sealed",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@see",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@throws",
+          "syntaxKind": "block",
+          "allowMultiple": true
+        },
+        {
+          "tagName": "@typeParam",
+          "syntaxKind": "block",
+          "allowMultiple": true
+        },
+        {
+          "tagName": "@virtual",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@betaDocumentation",
+          "syntaxKind": "modifier"
+        },
+        {
+          "tagName": "@internalRemarks",
+          "syntaxKind": "block"
+        },
+        {
+          "tagName": "@preapproved",
+          "syntaxKind": "modifier"
+        }
+      ],
+      "supportForTags": {
+        "@alpha": true,
+        "@beta": true,
+        "@defaultValue": true,
+        "@decorator": true,
+        "@deprecated": true,
+        "@eventProperty": true,
+        "@example": true,
+        "@experimental": true,
+        "@inheritDoc": true,
+        "@internal": true,
+        "@label": true,
+        "@link": true,
+        "@override": true,
+        "@packageDocumentation": true,
+        "@param": true,
+        "@privateRemarks": true,
+        "@public": true,
+        "@readonly": true,
+        "@remarks": true,
+        "@returns": true,
+        "@sealed": true,
+        "@see": true,
+        "@throws": true,
+        "@typeParam": true,
+        "@virtual": true,
+        "@betaDocumentation": true,
+        "@internalRemarks": true,
+        "@preapproved": true
+      }
+    }
+  },
+  "kind": "Package",
+  "canonicalReference": "kiko-components!",
+  "docComment": "",
+  "name": "kiko-components",
+  "members": [
+    {
+      "kind": "EntryPoint",
+      "canonicalReference": "kiko-components!",
+      "name": "",
+      "members": [
+        {
+          "kind": "Variable",
+          "canonicalReference": "kiko-components!_default:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "_default: "
+            },
+            {
+              "kind": "Content",
+              "text": "{\n    install: (app: "
+            },
+            {
+              "kind": "Reference",
+              "text": "App",
+              "canonicalReference": "@vue/runtime-core!App:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "<any>) => void;\n}"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "_default",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 4
+          }
+        },
+        {
+          "kind": "TypeAlias",
+          "canonicalReference": "kiko-components!AllComponentProps:type",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare type AllComponentProps = "
+            },
+            {
+              "kind": "Reference",
+              "text": "TextComponentProps",
+              "canonicalReference": "kiko-components!TextComponentProps:interface"
+            },
+            {
+              "kind": "Content",
+              "text": " & "
+            },
+            {
+              "kind": "Reference",
+              "text": "ImageComponentProps",
+              "canonicalReference": "kiko-components!ImageComponentProps:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "AllComponentProps",
+          "typeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 4
+          }
+        },
+        {
+          "kind": "Interface",
+          "canonicalReference": "kiko-components!ImageComponentProps:interface",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface ImageComponentProps extends "
+            },
+            {
+              "kind": "Reference",
+              "text": "CommonComponentProps",
+              "canonicalReference": "kiko-components!CommonComponentProps:interface"
+            },
+            {
+              "kind": "Content",
+              "text": " "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "ImageComponentProps",
+          "members": [
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "kiko-components!ImageComponentProps#src:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "src: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "src",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ],
+          "extendsTokenRanges": [
+            {
+              "startIndex": 1,
+              "endIndex": 3
+            }
+          ]
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "kiko-components!imageDefaultProps:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "imageDefaultProps: "
+            },
+            {
+              "kind": "Reference",
+              "text": "ImageComponentProps",
+              "canonicalReference": "kiko-components!ImageComponentProps:interface"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "imageDefaultProps",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 2
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "kiko-components!imageStylePropsNames:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "imageStylePropsNames: "
+            },
+            {
+              "kind": "Content",
+              "text": "string[]"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "imageStylePropsNames",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 2
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "kiko-components!install:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "install: "
+            },
+            {
+              "kind": "Content",
+              "text": "(app: "
+            },
+            {
+              "kind": "Reference",
+              "text": "App",
+              "canonicalReference": "@vue/runtime-core!App:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ") => void"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "install",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 4
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "kiko-components!KImage:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "_default: "
+            },
+            {
+              "kind": "Content",
+              "text": "import(\"vue\")."
+            },
+            {
+              "kind": "Reference",
+              "text": "DefineComponent",
+              "canonicalReference": "@vue/runtime-core!DefineComponent:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<{\n    src: {\n        type: "
+            },
+            {
+              "kind": "Reference",
+              "text": "StringConstructor",
+              "canonicalReference": "!StringConstructor:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ";\n        default: string | boolean;\n    };\n    actionType: {\n        type: "
+            },
+            {
+              "kind": "Reference",
+              "text": "StringConstructor",
+              "canonicalReference": "!StringConstructor:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ";\n        default: string | boolean;\n    };\n    url: {\n        type: "
+            },
+            {
+              "kind": "Reference",
+              "text": "StringConstructor",
+              "canonicalReference": "!StringConstructor:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ";\n        default: string | boolean;\n    };\n    isEditing: {\n        type: "
+            },
+            {
+              "kind": "Reference",
+              "text": "StringConstructor",
+              "canonicalReference": "!StringConstructor:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ";\n        default: string | boolean;\n    } & {\n        type: "
+            },
+            {
+              "kind": "Reference",
+              "text": "BooleanConstructor",
+              "canonicalReference": "!BooleanConstructor:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ";\n        default: boolean;\n    };\n    height: {\n        type: "
+            },
+            {
+              "kind": "Reference",
+              "text": "StringConstructor",
+              "canonicalReference": "!StringConstructor:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ";\n        default: string | boolean;\n    };\n    width: {\n        type: "
+            },
+            {
+              "kind": "Reference",
+              "text": "StringConstructor",
+              "canonicalReference": "!StringConstructor:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ";\n        default: string | boolean;\n    };\n    paddingLeft: {\n        type: "
+            },
+            {
+              "kind": "Reference",
+              "text": "StringConstructor",
+              "canonicalReference": "!StringConstructor:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ";\n        default: string | boolean;\n    };\n    paddingRight: {\n        type: "
+            },
+            {
+              "kind": "Reference",
+              "text": "StringConstructor",
+              "canonicalReference": "!StringConstructor:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ";\n        default: string | boolean;\n    };\n    paddingTop: {\n        type: "
+            },
+            {
+              "kind": "Reference",
+              "text": "StringConstructor",
+              "canonicalReference": "!StringConstructor:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ";\n        default: string | boolean;\n    };\n    paddingBottom: {\n        type: "
+            },
+            {
+              "kind": "Reference",
+              "text": "StringConstructor",
+              "canonicalReference": "!StringConstructor:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ";\n        default: string | boolean;\n    };\n    borderStyle: {\n        type: "
+            },
+            {
+              "kind": "Reference",
+              "text": "StringConstructor",
+              "canonicalReference": "!StringConstructor:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ";\n        default: string | boolean;\n    };\n    borderColor: {\n        type: "
+            },
+            {
+              "kind": "Reference",
+              "text": "StringConstructor",
+              "canonicalReference": "!StringConstructor:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ";\n        default: string | boolean;\n    };\n    borderWidth: {\n        type: "
+            },
+            {
+              "kind": "Reference",
+              "text": "StringConstructor",
+              "canonicalReference": "!StringConstructor:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ";\n        default: string | boolean;\n    };\n    borderRadius: {\n        type: "
+            },
+            {
+              "kind": "Reference",
+              "text": "StringConstructor",
+              "canonicalReference": "!StringConstructor:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ";\n        default: string | boolean;\n    };\n    boxShadow: {\n        type: "
+            },
+            {
+              "kind": "Reference",
+              "text": "StringConstructor",
+              "canonicalReference": "!StringConstructor:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ";\n        default: string | boolean;\n    };\n    opacity: {\n        type: "
+            },
+            {
+              "kind": "Reference",
+              "text": "StringConstructor",
+              "canonicalReference": "!StringConstructor:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ";\n        default: string | boolean;\n    };\n    position: {\n        type: "
+            },
+            {
+              "kind": "Reference",
+              "text": "StringConstructor",
+              "canonicalReference": "!StringConstructor:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ";\n        default: string | boolean;\n    };\n    left: {\n        type: "
+            },
+            {
+              "kind": "Reference",
+              "text": "StringConstructor",
+              "canonicalReference": "!StringConstructor:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ";\n        default: string | boolean;\n    };\n    top: {\n        type: "
+            },
+            {
+              "kind": "Reference",
+              "text": "StringConstructor",
+              "canonicalReference": "!StringConstructor:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ";\n        default: string | boolean;\n    };\n    right: {\n        type: "
+            },
+            {
+              "kind": "Reference",
+              "text": "StringConstructor",
+              "canonicalReference": "!StringConstructor:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ";\n        default: string | boolean;\n    };\n}, {\n    styleProps: import(\"vue\")."
+            },
+            {
+              "kind": "Reference",
+              "text": "ComputedRef",
+              "canonicalReference": "@vue/reactivity!ComputedRef:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "<"
+            },
+            {
+              "kind": "Reference",
+              "text": "Partial",
+              "canonicalReference": "!Partial:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<"
+            },
+            {
+              "kind": "Reference",
+              "text": "Readonly",
+              "canonicalReference": "!Readonly:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<"
+            },
+            {
+              "kind": "Reference",
+              "text": "Partial",
+              "canonicalReference": "!Partial:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<import(\"../../defaultProps\")."
+            },
+            {
+              "kind": "Reference",
+              "text": "CommonComponentProps",
+              "canonicalReference": "kiko-components!CommonComponentProps:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ">>>>;\n    handleClick: () => void;\n}, unknown, {}, {}, import(\"vue\")."
+            },
+            {
+              "kind": "Reference",
+              "text": "ComponentOptionsMixin",
+              "canonicalReference": "@vue/runtime-core!ComponentOptionsMixin:type"
+            },
+            {
+              "kind": "Content",
+              "text": ", import(\"vue\")."
+            },
+            {
+              "kind": "Reference",
+              "text": "ComponentOptionsMixin",
+              "canonicalReference": "@vue/runtime-core!ComponentOptionsMixin:type"
+            },
+            {
+              "kind": "Content",
+              "text": ", "
+            },
+            {
+              "kind": "Reference",
+              "text": "Record",
+              "canonicalReference": "!Record:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<string, any>, string, import(\"vue\")."
+            },
+            {
+              "kind": "Reference",
+              "text": "VNodeProps",
+              "canonicalReference": "@vue/runtime-core!VNodeProps:type"
+            },
+            {
+              "kind": "Content",
+              "text": " & import(\"vue\")."
+            },
+            {
+              "kind": "Reference",
+              "text": "AllowedComponentProps",
+              "canonicalReference": "@vue/runtime-core!AllowedComponentProps:interface"
+            },
+            {
+              "kind": "Content",
+              "text": " & import(\"vue\")."
+            },
+            {
+              "kind": "Reference",
+              "text": "ComponentCustomProps",
+              "canonicalReference": "@vue/runtime-core!ComponentCustomProps:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ", "
+            },
+            {
+              "kind": "Reference",
+              "text": "Readonly",
+              "canonicalReference": "!Readonly:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<{\n    src?: unknown;\n    actionType?: unknown;\n    url?: unknown;\n    isEditing?: unknown;\n    height?: unknown;\n    width?: unknown;\n    paddingLeft?: unknown;\n    paddingRight?: unknown;\n    paddingTop?: unknown;\n    paddingBottom?: unknown;\n    borderStyle?: unknown;\n    borderColor?: unknown;\n    borderWidth?: unknown;\n    borderRadius?: unknown;\n    boxShadow?: unknown;\n    opacity?: unknown;\n    position?: unknown;\n    left?: unknown;\n    top?: unknown;\n    right?: unknown;\n} & {\n    src: string;\n    actionType: string;\n    url: string;\n    isEditing: boolean;\n    height: string;\n    width: string;\n    paddingLeft: string;\n    paddingRight: string;\n    paddingTop: string;\n    paddingBottom: string;\n    borderStyle: string;\n    borderColor: string;\n    borderWidth: string;\n    borderRadius: string;\n    boxShadow: string;\n    opacity: string;\n    position: string;\n    left: string;\n    top: string;\n    right: string;\n} & {}>, {\n    src: string;\n    actionType: string;\n    url: string;\n    isEditing: boolean;\n    height: string;\n    width: string;\n    paddingLeft: string;\n    paddingRight: string;\n    paddingTop: string;\n    paddingBottom: string;\n    borderStyle: string;\n    borderColor: string;\n    borderWidth: string;\n    borderRadius: string;\n    boxShadow: string;\n    opacity: string;\n    position: string;\n    left: string;\n    top: string;\n    right: string;\n}>"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "KImage",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 70
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "kiko-components!KText:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "_default: "
+            },
+            {
+              "kind": "Content",
+              "text": "import(\"vue\")."
+            },
+            {
+              "kind": "Reference",
+              "text": "DefineComponent",
+              "canonicalReference": "@vue/runtime-core!DefineComponent:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<{\n    text: {\n        type: "
+            },
+            {
+              "kind": "Reference",
+              "text": "StringConstructor",
+              "canonicalReference": "!StringConstructor:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ";\n        default: string | boolean;\n    };\n    fontSize: {\n        type: "
+            },
+            {
+              "kind": "Reference",
+              "text": "StringConstructor",
+              "canonicalReference": "!StringConstructor:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ";\n        default: string | boolean;\n    };\n    fontFamily: {\n        type: "
+            },
+            {
+              "kind": "Reference",
+              "text": "StringConstructor",
+              "canonicalReference": "!StringConstructor:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ";\n        default: string | boolean;\n    };\n    fontWeight: {\n        type: "
+            },
+            {
+              "kind": "Reference",
+              "text": "StringConstructor",
+              "canonicalReference": "!StringConstructor:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ";\n        default: string | boolean;\n    };\n    fontStyle: {\n        type: "
+            },
+            {
+              "kind": "Reference",
+              "text": "StringConstructor",
+              "canonicalReference": "!StringConstructor:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ";\n        default: string | boolean;\n    };\n    textDecoration: {\n        type: "
+            },
+            {
+              "kind": "Reference",
+              "text": "StringConstructor",
+              "canonicalReference": "!StringConstructor:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ";\n        default: string | boolean;\n    };\n    lineHeight: {\n        type: "
+            },
+            {
+              "kind": "Reference",
+              "text": "StringConstructor",
+              "canonicalReference": "!StringConstructor:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ";\n        default: string | boolean;\n    };\n    textAlign: {\n        type: "
+            },
+            {
+              "kind": "Reference",
+              "text": "StringConstructor",
+              "canonicalReference": "!StringConstructor:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ";\n        default: string | boolean;\n    };\n    color: {\n        type: "
+            },
+            {
+              "kind": "Reference",
+              "text": "StringConstructor",
+              "canonicalReference": "!StringConstructor:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ";\n        default: string | boolean;\n    };\n    backgroundColor: {\n        type: "
+            },
+            {
+              "kind": "Reference",
+              "text": "StringConstructor",
+              "canonicalReference": "!StringConstructor:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ";\n        default: string | boolean;\n    };\n    actionType: {\n        type: "
+            },
+            {
+              "kind": "Reference",
+              "text": "StringConstructor",
+              "canonicalReference": "!StringConstructor:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ";\n        default: string | boolean;\n    };\n    url: {\n        type: "
+            },
+            {
+              "kind": "Reference",
+              "text": "StringConstructor",
+              "canonicalReference": "!StringConstructor:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ";\n        default: string | boolean;\n    };\n    isEditing: {\n        type: "
+            },
+            {
+              "kind": "Reference",
+              "text": "StringConstructor",
+              "canonicalReference": "!StringConstructor:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ";\n        default: string | boolean;\n    } & {\n        type: "
+            },
+            {
+              "kind": "Reference",
+              "text": "BooleanConstructor",
+              "canonicalReference": "!BooleanConstructor:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ";\n        default: boolean;\n    };\n    height: {\n        type: "
+            },
+            {
+              "kind": "Reference",
+              "text": "StringConstructor",
+              "canonicalReference": "!StringConstructor:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ";\n        default: string | boolean;\n    };\n    width: {\n        type: "
+            },
+            {
+              "kind": "Reference",
+              "text": "StringConstructor",
+              "canonicalReference": "!StringConstructor:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ";\n        default: string | boolean;\n    };\n    paddingLeft: {\n        type: "
+            },
+            {
+              "kind": "Reference",
+              "text": "StringConstructor",
+              "canonicalReference": "!StringConstructor:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ";\n        default: string | boolean;\n    };\n    paddingRight: {\n        type: "
+            },
+            {
+              "kind": "Reference",
+              "text": "StringConstructor",
+              "canonicalReference": "!StringConstructor:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ";\n        default: string | boolean;\n    };\n    paddingTop: {\n        type: "
+            },
+            {
+              "kind": "Reference",
+              "text": "StringConstructor",
+              "canonicalReference": "!StringConstructor:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ";\n        default: string | boolean;\n    };\n    paddingBottom: {\n        type: "
+            },
+            {
+              "kind": "Reference",
+              "text": "StringConstructor",
+              "canonicalReference": "!StringConstructor:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ";\n        default: string | boolean;\n    };\n    borderStyle: {\n        type: "
+            },
+            {
+              "kind": "Reference",
+              "text": "StringConstructor",
+              "canonicalReference": "!StringConstructor:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ";\n        default: string | boolean;\n    };\n    borderColor: {\n        type: "
+            },
+            {
+              "kind": "Reference",
+              "text": "StringConstructor",
+              "canonicalReference": "!StringConstructor:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ";\n        default: string | boolean;\n    };\n    borderWidth: {\n        type: "
+            },
+            {
+              "kind": "Reference",
+              "text": "StringConstructor",
+              "canonicalReference": "!StringConstructor:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ";\n        default: string | boolean;\n    };\n    borderRadius: {\n        type: "
+            },
+            {
+              "kind": "Reference",
+              "text": "StringConstructor",
+              "canonicalReference": "!StringConstructor:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ";\n        default: string | boolean;\n    };\n    boxShadow: {\n        type: "
+            },
+            {
+              "kind": "Reference",
+              "text": "StringConstructor",
+              "canonicalReference": "!StringConstructor:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ";\n        default: string | boolean;\n    };\n    opacity: {\n        type: "
+            },
+            {
+              "kind": "Reference",
+              "text": "StringConstructor",
+              "canonicalReference": "!StringConstructor:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ";\n        default: string | boolean;\n    };\n    position: {\n        type: "
+            },
+            {
+              "kind": "Reference",
+              "text": "StringConstructor",
+              "canonicalReference": "!StringConstructor:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ";\n        default: string | boolean;\n    };\n    left: {\n        type: "
+            },
+            {
+              "kind": "Reference",
+              "text": "StringConstructor",
+              "canonicalReference": "!StringConstructor:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ";\n        default: string | boolean;\n    };\n    top: {\n        type: "
+            },
+            {
+              "kind": "Reference",
+              "text": "StringConstructor",
+              "canonicalReference": "!StringConstructor:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ";\n        default: string | boolean;\n    };\n    right: {\n        type: "
+            },
+            {
+              "kind": "Reference",
+              "text": "StringConstructor",
+              "canonicalReference": "!StringConstructor:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ";\n        default: string | boolean;\n    };\n    tag: {\n        type: "
+            },
+            {
+              "kind": "Reference",
+              "text": "StringConstructor",
+              "canonicalReference": "!StringConstructor:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ";\n        default: string;\n    };\n}, {\n    styleProps: import(\"vue\")."
+            },
+            {
+              "kind": "Reference",
+              "text": "ComputedRef",
+              "canonicalReference": "@vue/reactivity!ComputedRef:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "<"
+            },
+            {
+              "kind": "Reference",
+              "text": "Partial",
+              "canonicalReference": "!Partial:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<"
+            },
+            {
+              "kind": "Reference",
+              "text": "Readonly",
+              "canonicalReference": "!Readonly:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<"
+            },
+            {
+              "kind": "Reference",
+              "text": "Partial",
+              "canonicalReference": "!Partial:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<import(\"../../defaultProps\")."
+            },
+            {
+              "kind": "Reference",
+              "text": "CommonComponentProps",
+              "canonicalReference": "kiko-components!CommonComponentProps:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ">>>>;\n    handleClick: () => void;\n}, unknown, {}, {}, import(\"vue\")."
+            },
+            {
+              "kind": "Reference",
+              "text": "ComponentOptionsMixin",
+              "canonicalReference": "@vue/runtime-core!ComponentOptionsMixin:type"
+            },
+            {
+              "kind": "Content",
+              "text": ", import(\"vue\")."
+            },
+            {
+              "kind": "Reference",
+              "text": "ComponentOptionsMixin",
+              "canonicalReference": "@vue/runtime-core!ComponentOptionsMixin:type"
+            },
+            {
+              "kind": "Content",
+              "text": ", "
+            },
+            {
+              "kind": "Reference",
+              "text": "Record",
+              "canonicalReference": "!Record:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<string, any>, string, import(\"vue\")."
+            },
+            {
+              "kind": "Reference",
+              "text": "VNodeProps",
+              "canonicalReference": "@vue/runtime-core!VNodeProps:type"
+            },
+            {
+              "kind": "Content",
+              "text": " & import(\"vue\")."
+            },
+            {
+              "kind": "Reference",
+              "text": "AllowedComponentProps",
+              "canonicalReference": "@vue/runtime-core!AllowedComponentProps:interface"
+            },
+            {
+              "kind": "Content",
+              "text": " & import(\"vue\")."
+            },
+            {
+              "kind": "Reference",
+              "text": "ComponentCustomProps",
+              "canonicalReference": "@vue/runtime-core!ComponentCustomProps:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ", "
+            },
+            {
+              "kind": "Reference",
+              "text": "Readonly",
+              "canonicalReference": "!Readonly:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<{\n    text?: unknown;\n    fontSize?: unknown;\n    fontFamily?: unknown;\n    fontWeight?: unknown;\n    fontStyle?: unknown;\n    textDecoration?: unknown;\n    lineHeight?: unknown;\n    textAlign?: unknown;\n    color?: unknown;\n    backgroundColor?: unknown;\n    actionType?: unknown;\n    url?: unknown;\n    isEditing?: unknown;\n    height?: unknown;\n    width?: unknown;\n    paddingLeft?: unknown;\n    paddingRight?: unknown;\n    paddingTop?: unknown;\n    paddingBottom?: unknown;\n    borderStyle?: unknown;\n    borderColor?: unknown;\n    borderWidth?: unknown;\n    borderRadius?: unknown;\n    boxShadow?: unknown;\n    opacity?: unknown;\n    position?: unknown;\n    left?: unknown;\n    top?: unknown;\n    right?: unknown;\n    tag?: unknown;\n} & {\n    text: string;\n    fontSize: string;\n    fontFamily: string;\n    fontWeight: string;\n    fontStyle: string;\n    textDecoration: string;\n    lineHeight: string;\n    textAlign: string;\n    color: string;\n    backgroundColor: string;\n    actionType: string;\n    url: string;\n    isEditing: boolean;\n    height: string;\n    width: string;\n    paddingLeft: string;\n    paddingRight: string;\n    paddingTop: string;\n    paddingBottom: string;\n    borderStyle: string;\n    borderColor: string;\n    borderWidth: string;\n    borderRadius: string;\n    boxShadow: string;\n    opacity: string;\n    position: string;\n    left: string;\n    top: string;\n    right: string;\n    tag: string;\n} & {}>, {\n    text: string;\n    fontSize: string;\n    fontFamily: string;\n    fontWeight: string;\n    fontStyle: string;\n    textDecoration: string;\n    lineHeight: string;\n    textAlign: string;\n    color: string;\n    backgroundColor: string;\n    actionType: string;\n    url: string;\n    isEditing: boolean;\n    height: string;\n    width: string;\n    paddingLeft: string;\n    paddingRight: string;\n    paddingTop: string;\n    paddingBottom: string;\n    borderStyle: string;\n    borderColor: string;\n    borderWidth: string;\n    borderRadius: string;\n    boxShadow: string;\n    opacity: string;\n    position: string;\n    left: string;\n    top: string;\n    right: string;\n    tag: string;\n}>"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "KText",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 90
+          }
+        },
+        {
+          "kind": "Interface",
+          "canonicalReference": "kiko-components!TextComponentProps:interface",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface TextComponentProps extends "
+            },
+            {
+              "kind": "Reference",
+              "text": "CommonComponentProps",
+              "canonicalReference": "kiko-components!CommonComponentProps:interface"
+            },
+            {
+              "kind": "Content",
+              "text": " "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "TextComponentProps",
+          "members": [
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "kiko-components!TextComponentProps#backgroundColor:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "backgroundColor: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "backgroundColor",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "kiko-components!TextComponentProps#color:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "color: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "color",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "kiko-components!TextComponentProps#fontFamily:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "fontFamily: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "fontFamily",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "kiko-components!TextComponentProps#fontSize:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "fontSize: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "fontSize",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "kiko-components!TextComponentProps#fontStyle:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "fontStyle: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "fontStyle",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "kiko-components!TextComponentProps#fontWeight:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "fontWeight: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "fontWeight",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "kiko-components!TextComponentProps#lineHeight:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "lineHeight: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "lineHeight",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "kiko-components!TextComponentProps#text:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "text: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "text",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "kiko-components!TextComponentProps#textAlign:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "textAlign: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "textAlign",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "kiko-components!TextComponentProps#textDecoration:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "textDecoration: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "textDecoration",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "kiko-components!TextComponentProps#wordBreak:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "wordBreak: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "wordBreak",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ],
+          "extendsTokenRanges": [
+            {
+              "startIndex": 1,
+              "endIndex": 3
+            }
+          ]
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "kiko-components!textDefaultProps:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "textDefaultProps: "
+            },
+            {
+              "kind": "Reference",
+              "text": "TextComponentProps",
+              "canonicalReference": "kiko-components!TextComponentProps:interface"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "textDefaultProps",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 2
+          }
+        },
+        {
+          "kind": "Variable",
+          "canonicalReference": "kiko-components!textStylePropNames:var",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "textStylePropNames: "
+            },
+            {
+              "kind": "Content",
+              "text": "string[]"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "textStylePropNames",
+          "variableTypeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 2
+          }
+        }
+      ]
+    }
+  ]
+}
