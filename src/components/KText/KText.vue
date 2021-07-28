@@ -28,7 +28,4 @@ export default defineComponent({
 </script>
 
 <style lang="less">
-  .k-text-component {
-    position: relative !important;
-  }
 </style>

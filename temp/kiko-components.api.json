@@ -800,6 +800,15 @@
             },
             {
               "kind": "Content",
+              "text": ";\n        default: string | boolean;\n    };\n    wordBreak: {\n        type: "
+            },
+            {
+              "kind": "Reference",
+              "text": "StringConstructor",
+              "canonicalReference": "!StringConstructor:interface"
+            },
+            {
+              "kind": "Content",
               "text": ";\n        default: string | boolean;\n    };\n    actionType: {\n        type: "
             },
             {
@@ -1097,14 +1106,14 @@
             },
             {
               "kind": "Content",
-              "text": "<{\n    text?: unknown;\n    fontSize?: unknown;\n    fontFamily?: unknown;\n    fontWeight?: unknown;\n    fontStyle?: unknown;\n    textDecoration?: unknown;\n    lineHeight?: unknown;\n    textAlign?: unknown;\n    color?: unknown;\n    backgroundColor?: unknown;\n    actionType?: unknown;\n    url?: unknown;\n    isEditing?: unknown;\n    height?: unknown;\n    width?: unknown;\n    paddingLeft?: unknown;\n    paddingRight?: unknown;\n    paddingTop?: unknown;\n    paddingBottom?: unknown;\n    borderStyle?: unknown;\n    borderColor?: unknown;\n    borderWidth?: unknown;\n    borderRadius?: unknown;\n    boxShadow?: unknown;\n    opacity?: unknown;\n    position?: unknown;\n    left?: unknown;\n    top?: unknown;\n    right?: unknown;\n    tag?: unknown;\n} & {\n    text: string;\n    fontSize: string;\n    fontFamily: string;\n    fontWeight: string;\n    fontStyle: string;\n    textDecoration: string;\n    lineHeight: string;\n    textAlign: string;\n    color: string;\n    backgroundColor: string;\n    actionType: string;\n    url: string;\n    isEditing: boolean;\n    height: string;\n    width: string;\n    paddingLeft: string;\n    paddingRight: string;\n    paddingTop: string;\n    paddingBottom: string;\n    borderStyle: string;\n    borderColor: string;\n    borderWidth: string;\n    borderRadius: string;\n    boxShadow: string;\n    opacity: string;\n    position: string;\n    left: string;\n    top: string;\n    right: string;\n    tag: string;\n} & {}>, {\n    text: string;\n    fontSize: string;\n    fontFamily: string;\n    fontWeight: string;\n    fontStyle: string;\n    textDecoration: string;\n    lineHeight: string;\n    textAlign: string;\n    color: string;\n    backgroundColor: string;\n    actionType: string;\n    url: string;\n    isEditing: boolean;\n    height: string;\n    width: string;\n    paddingLeft: string;\n    paddingRight: string;\n    paddingTop: string;\n    paddingBottom: string;\n    borderStyle: string;\n    borderColor: string;\n    borderWidth: string;\n    borderRadius: string;\n    boxShadow: string;\n    opacity: string;\n    position: string;\n    left: string;\n    top: string;\n    right: string;\n    tag: string;\n}>"
+              "text": "<{\n    text?: unknown;\n    fontSize?: unknown;\n    fontFamily?: unknown;\n    fontWeight?: unknown;\n    fontStyle?: unknown;\n    textDecoration?: unknown;\n    lineHeight?: unknown;\n    textAlign?: unknown;\n    color?: unknown;\n    backgroundColor?: unknown;\n    wordBreak?: unknown;\n    actionType?: unknown;\n    url?: unknown;\n    isEditing?: unknown;\n    height?: unknown;\n    width?: unknown;\n    paddingLeft?: unknown;\n    paddingRight?: unknown;\n    paddingTop?: unknown;\n    paddingBottom?: unknown;\n    borderStyle?: unknown;\n    borderColor?: unknown;\n    borderWidth?: unknown;\n    borderRadius?: unknown;\n    boxShadow?: unknown;\n    opacity?: unknown;\n    position?: unknown;\n    left?: unknown;\n    top?: unknown;\n    right?: unknown;\n    tag?: unknown;\n} & {\n    text: string;\n    fontSize: string;\n    fontFamily: string;\n    fontWeight: string;\n    fontStyle: string;\n    textDecoration: string;\n    lineHeight: string;\n    textAlign: string;\n    color: string;\n    backgroundColor: string;\n    wordBreak: string;\n    actionType: string;\n    url: string;\n    isEditing: boolean;\n    height: string;\n    width: string;\n    paddingLeft: string;\n    paddingRight: string;\n    paddingTop: string;\n    paddingBottom: string;\n    borderStyle: string;\n    borderColor: string;\n    borderWidth: string;\n    borderRadius: string;\n    boxShadow: string;\n    opacity: string;\n    position: string;\n    left: string;\n    top: string;\n    right: string;\n    tag: string;\n} & {}>, {\n    text: string;\n    fontSize: string;\n    fontFamily: string;\n    fontWeight: string;\n    fontStyle: string;\n    textDecoration: string;\n    lineHeight: string;\n    textAlign: string;\n    color: string;\n    backgroundColor: string;\n    wordBreak: string;\n    actionType: string;\n    url: string;\n    isEditing: boolean;\n    height: string;\n    width: string;\n    paddingLeft: string;\n    paddingRight: string;\n    paddingTop: string;\n    paddingBottom: string;\n    borderStyle: string;\n    borderColor: string;\n    borderWidth: string;\n    borderRadius: string;\n    boxShadow: string;\n    opacity: string;\n    position: string;\n    left: string;\n    top: string;\n    right: string;\n    tag: string;\n}>"
             }
           ],
           "releaseTag": "Public",
           "name": "KText",
           "variableTypeTokenRange": {
             "startIndex": 1,
-            "endIndex": 90
+            "endIndex": 92
           }
         },
         {

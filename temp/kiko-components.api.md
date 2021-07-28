@@ -233,6 +233,10 @@ backgroundColor: {
 type: StringConstructor;
 default: string | boolean;
 };
+wordBreak: {
+type: StringConstructor;
+default: string | boolean;
+};
 actionType: {
 type: StringConstructor;
 default: string | boolean;
@@ -330,6 +334,7 @@ lineHeight?: unknown;
 textAlign?: unknown;
 color?: unknown;
 backgroundColor?: unknown;
+wordBreak?: unknown;
 actionType?: unknown;
 url?: unknown;
 isEditing?: unknown;
@@ -361,6 +366,7 @@ lineHeight: string;
 textAlign: string;
 color: string;
 backgroundColor: string;
+wordBreak: string;
 actionType: string;
 url: string;
 isEditing: boolean;
@@ -392,6 +398,7 @@ lineHeight: string;
 textAlign: string;
 color: string;
 backgroundColor: string;
+wordBreak: string;
 actionType: string;
 url: string;
 isEditing: boolean;

@@ -33,6 +33,5 @@ export default defineComponent({
 <style lang="less">
   .k-image-component {
     max-width: 100%;
-    position: relative !important;
   }
 </style>

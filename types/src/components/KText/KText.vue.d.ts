@@ -39,6 +39,10 @@ declare const _default: import("vue").DefineComponent<{
         type: StringConstructor;
         default: string | boolean;
     };
+    wordBreak: {
+        type: StringConstructor;
+        default: string | boolean;
+    };
     actionType: {
         type: StringConstructor;
         default: string | boolean;
@@ -136,6 +140,7 @@ declare const _default: import("vue").DefineComponent<{
     textAlign?: unknown;
     color?: unknown;
     backgroundColor?: unknown;
+    wordBreak?: unknown;
     actionType?: unknown;
     url?: unknown;
     isEditing?: unknown;
@@ -167,6 +172,7 @@ declare const _default: import("vue").DefineComponent<{
     textAlign: string;
     color: string;
     backgroundColor: string;
+    wordBreak: string;
     actionType: string;
     url: string;
     isEditing: boolean;
@@ -198,6 +204,7 @@ declare const _default: import("vue").DefineComponent<{
     textAlign: string;
     color: string;
     backgroundColor: string;
+    wordBreak: string;
     actionType: string;
     url: string;
     isEditing: boolean;
