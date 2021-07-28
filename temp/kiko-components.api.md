@@ -10,6 +10,7 @@ import { ComponentCustomProps } from 'vue';
 import { ComponentOptionsMixin } from 'vue';
 import { ComputedRef } from 'vue';
 import { DefineComponent } from 'vue';
+import { PropType } from 'vue';
 import { VNodeProps } from 'vue';
 
 // @public (undocumented)
@@ -20,6 +21,24 @@ const _default: {
     install: (app: App<any>) => void;
 };
 export default _default;
+
+// @public (undocumented)
+export const FinalPage: DefineComponent<    {
+page: {
+type: PropType<PageData>;
+};
+components: {
+type: PropType<ComponentData[]>;
+required: true;
+};
+}, unknown, unknown, {}, {}, ComponentOptionsMixin, ComponentOptionsMixin, Record<string, any>, string, VNodeProps & AllowedComponentProps & ComponentCustomProps, Readonly<{
+page?: unknown;
+components?: unknown;
+} & {
+components: ComponentData[];
+} & {
+page?: PageData | undefined;
+}>, {}>;
 
 // Warning: (ae-forgotten-export) The symbol "CommonComponentProps" needs to be exported by the entry point index.d.ts
 //
@@ -452,6 +471,11 @@ export const textDefaultProps: TextComponentProps;
 
 // @public (undocumented)
 export const textStylePropNames: string[];
+
+// Warnings were encountered during analysis:
+//
+// types/src/components/FinalPage/FinalPage.vue.d.ts:5:9 - (ae-forgotten-export) The symbol "PageData" needs to be exported by the entry point index.d.ts
+// types/src/components/FinalPage/FinalPage.vue.d.ts:8:9 - (ae-forgotten-export) The symbol "ComponentData" needs to be exported by the entry point index.d.ts
 
 // (No @packageDocumentation comment for this package)
 

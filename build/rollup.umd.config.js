@@ -7,7 +7,6 @@ export default {
     format: 'umd',
     globals: {
       'vue': 'Vue',
-      'lodash-es': '_'
     },
     exports: 'named'
   },

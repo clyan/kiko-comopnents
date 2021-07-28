@@ -4,6 +4,7 @@ import { ComponentCustomProps } from 'vue';
 import { ComponentOptionsMixin } from 'vue';
 import { ComputedRef } from 'vue';
 import { DefineComponent } from 'vue';
+import { PropType } from 'vue';
 import { VNodeProps } from 'vue';
 
 export declare type AllComponentProps = TextComponentProps & ImageComponentProps;
@@ -30,10 +31,38 @@ declare interface CommonComponentProps {
     right: string;
 }
 
+declare interface ComponentData {
+    props: {
+        [key: string]: any;
+    };
+    id: string;
+    name: string;
+    layerName?: string;
+    isHidden?: boolean;
+    isLocked?: boolean;
+}
+
 declare const _default: {
     install: (app: App<any>) => void;
 };
 export default _default;
+
+export declare const FinalPage: DefineComponent<    {
+page: {
+type: PropType<PageData>;
+};
+components: {
+type: PropType<ComponentData[]>;
+required: true;
+};
+}, unknown, unknown, {}, {}, ComponentOptionsMixin, ComponentOptionsMixin, Record<string, any>, string, VNodeProps & AllowedComponentProps & ComponentCustomProps, Readonly<{
+page?: unknown;
+components?: unknown;
+} & {
+components: ComponentData[];
+} & {
+page?: PageData | undefined;
+}>, {}>;
 
 export declare interface ImageComponentProps extends CommonComponentProps {
     src: string;
@@ -425,6 +454,27 @@ top: string;
 right: string;
 tag: string;
 }>;
+
+declare interface PageData {
+    props: {
+        [key: string]: any;
+    };
+    setting: {
+        [key: string]: any;
+    };
+    id?: number;
+    title?: string;
+    desc?: string;
+    coverImg?: string;
+    uuid?: string;
+    latestPublishAt?: string;
+    updatedAt?: string;
+    isTemplate?: boolean;
+    isHot?: boolean;
+    isNew?: boolean;
+    author?: string;
+    status?: string;
+}
 
 export declare interface TextComponentProps extends CommonComponentProps {
     text: string;

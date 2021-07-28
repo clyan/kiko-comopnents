@@ -1,3 +1,33 @@
+export interface ComponentData {
+    props: {
+        [key: string]: any;
+    };
+    id: string;
+    name: string;
+    layerName?: string;
+    isHidden?: boolean;
+    isLocked?: boolean;
+}
+export interface PageData {
+    props: {
+        [key: string]: any;
+    };
+    setting: {
+        [key: string]: any;
+    };
+    id?: number;
+    title?: string;
+    desc?: string;
+    coverImg?: string;
+    uuid?: string;
+    latestPublishAt?: string;
+    updatedAt?: string;
+    isTemplate?: boolean;
+    isHot?: boolean;
+    isNew?: boolean;
+    author?: string;
+    status?: string;
+}
 export interface CommonComponentProps {
     actionType: string;
     url: string;
