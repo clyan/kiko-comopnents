@@ -7,7 +7,7 @@
     "build": "npm run clean && npm run build:esm && npm run build:umd && npm run build:types",
     "test:watch": "vue-cli-service test:unit --watch",
     "test": "vue-cli-service test:unit",
-    "lint": "vue-cli-service lint  --max-warnings 5",
+    "lint": "vue-cli-service lint  --max-warnings 10",
     "build:esm": "rollup --config build/rollup.esm.config.js",
     "build:umd": "rollup --config build/rollup.umd.config.js",
     "build:dev": "npm run build && npm pack",

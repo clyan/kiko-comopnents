@@ -30,7 +30,7 @@ export default {
     less({
       output: "./dist/index.css"
     }),
-    // terser()
+    terser()
   ],
   external: ['vue']
 }
