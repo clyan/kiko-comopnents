@@ -50,6 +50,7 @@ export interface CommonComponentProps {
   left: string;
   top: string;
   right: string;
+  zIndex: string;
 }
 export const commonDefaultProps: CommonComponentProps = {
   // actions
@@ -75,7 +76,8 @@ export const commonDefaultProps: CommonComponentProps = {
   position: 'absolute',
   left: '0',
   top: '0',
-  right: '0'
+  right: '0',
+  zIndex: '0'
 }
 export interface TextComponentProps extends CommonComponentProps {
   text: string;

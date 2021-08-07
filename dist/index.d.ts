@@ -9,7 +9,7 @@ import { VNodeProps } from 'vue';
 
 export declare type AllComponentProps = TextComponentProps & ImageComponentProps;
 
-declare interface CommonComponentProps {
+export declare interface CommonComponentProps {
     actionType: string;
     url: string;
     isEditing: boolean;
@@ -29,7 +29,10 @@ declare interface CommonComponentProps {
     left: string;
     top: string;
     right: string;
+    zIndex: string;
 }
+
+export declare const commonDefaultProps: CommonComponentProps;
 
 declare interface ComponentData {
     props: {
@@ -73,6 +76,13 @@ export declare const imageDefaultProps: ImageComponentProps;
 export declare const imageStylePropsNames: string[];
 
 export declare const install: (app: App) => void;
+
+export declare const isEditingProp: {
+    isEditing: {
+        type: BooleanConstructor;
+        default: boolean;
+    };
+};
 
 export declare const KImage: DefineComponent<    {
 src: {
@@ -493,5 +503,15 @@ export declare interface TextComponentProps extends CommonComponentProps {
 export declare const textDefaultProps: TextComponentProps;
 
 export declare const textStylePropNames: string[];
+
+export declare const transformToComponentProps: <T extends {}>(props: T) => { [P in keyof T]: {
+        type: StringConstructor;
+        default: T[keyof T];
+    }; } & {
+    isEditing: {
+        type: BooleanConstructor;
+        default: boolean;
+    };
+};
 
 export { }

@@ -17,6 +17,53 @@ import { VNodeProps } from 'vue';
 export type AllComponentProps = TextComponentProps & ImageComponentProps;
 
 // @public (undocumented)
+export interface CommonComponentProps {
+    // (undocumented)
+    actionType: string;
+    // (undocumented)
+    borderColor: string;
+    // (undocumented)
+    borderRadius: string;
+    // (undocumented)
+    borderStyle: string;
+    // (undocumented)
+    borderWidth: string;
+    // (undocumented)
+    boxShadow: string;
+    // (undocumented)
+    height: string;
+    // (undocumented)
+    isEditing: boolean;
+    // (undocumented)
+    left: string;
+    // (undocumented)
+    opacity: string;
+    // (undocumented)
+    paddingBottom: string;
+    // (undocumented)
+    paddingLeft: string;
+    // (undocumented)
+    paddingRight: string;
+    // (undocumented)
+    paddingTop: string;
+    // (undocumented)
+    position: string;
+    // (undocumented)
+    right: string;
+    // (undocumented)
+    top: string;
+    // (undocumented)
+    url: string;
+    // (undocumented)
+    width: string;
+    // (undocumented)
+    zIndex: string;
+}
+
+// @public (undocumented)
+export const commonDefaultProps: CommonComponentProps;
+
+// @public (undocumented)
 const _default: {
     install: (app: App<any>) => void;
 };
@@ -40,8 +87,6 @@ components: ComponentData[];
 page?: PageData | undefined;
 }>, {}>;
 
-// Warning: (ae-forgotten-export) The symbol "CommonComponentProps" needs to be exported by the entry point index.d.ts
-//
 // @public (undocumented)
 export interface ImageComponentProps extends CommonComponentProps {
     // (undocumented)
@@ -56,6 +101,14 @@ export const imageStylePropsNames: string[];
 
 // @public (undocumented)
 export const install: (app: App) => void;
+
+// @public (undocumented)
+export const isEditingProp: {
+    isEditing: {
+        type: BooleanConstructor;
+        default: boolean;
+    };
+};
 
 // @public (undocumented)
 export const KImage: DefineComponent<    {
@@ -471,6 +524,17 @@ export const textDefaultProps: TextComponentProps;
 
 // @public (undocumented)
 export const textStylePropNames: string[];
+
+// @public (undocumented)
+export const transformToComponentProps: <T extends {}>(props: T) => { [P in keyof T]: {
+        type: StringConstructor;
+        default: T[keyof T];
+    }; } & {
+    isEditing: {
+        type: BooleanConstructor;
+        default: boolean;
+    };
+};
 
 // Warnings were encountered during analysis:
 //
